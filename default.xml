@@ -19,8 +19,9 @@
     <linkfile src="." dest="vendor/llvm/tools/clang/tools/extra/clang-typegrind" />
   </project>
 
-  <!-- TODO: move to vendor, update include path -->
-  <project name="kazuho/picojson.git" remote="github" path="typegrind/clang-typegrind/picojson">
+  <project name="kazuho/picojson.git" remote="github" path="vendor/picojson">
+    <!-- todo: remove -->
+    <linkfile src="." dest="typegrind/clang-typegrind/picojson" />
   </project>
 
 </manifest>
