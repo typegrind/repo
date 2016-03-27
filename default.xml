@@ -20,10 +20,7 @@
     <linkfile src="." dest="vendor/llvm/tools/clang/tools/extra/clang-typegrind" />
   </project>
 
-  <project name="kazuho/picojson.git" remote="github" path="vendor/picojson">
-    <!-- todo: remove -->
-    <linkfile src="." dest="typegrind/clang-typegrind/picojson" />
-  </project>
+  <project name="kazuho/picojson.git" remote="github" path="vendor/picojson" />
 
 </manifest>
 
