@@ -22,5 +22,7 @@
 
   <project name="kazuho/picojson.git" remote="github" path="vendor/picojson" />
 
+  <project name="typegrind/googletest.git" remote="github" path="vendor/gtest" />
+
 </manifest>
 
