@@ -24,5 +24,8 @@
 
   <project name="typegrind/googletest.git" remote="github" path="vendor/gtest" />
 
+  <project name="typegrind/logger-nop.git" remote="github" path="logger/nop" />
+  <project name="typegrind/logger-demo_cout.git" remote="github" path="logger/demo_cout" />
+
 </manifest>
 
