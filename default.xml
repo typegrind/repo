@@ -24,8 +24,18 @@
 
   <project name="typegrind/googletest.git" remote="github" path="vendor/gtest" />
 
+  <project name="typegrind/examples.git" remote="github" path="examples/"/>
+  <project name="typegrind/examples.git" remote="github" path="examples-instrumented/" />
+
   <project name="typegrind/logger-nop.git" remote="github" path="logger/nop" />
   <project name="typegrind/logger-demo_cout.git" remote="github" path="logger/demo_cout" />
+  <project name="typegrind/logger-buffered_binary.git" remote="github" path="logger/buffered_binary">
+    <linkfile src="." dest="examples/logger_buffered_binary" />
+    <linkfile src="." dest="examples-instrumented/logger_buffered_binary" />
+  </project>
+
+
+  <project name="Softmotions/ejdb" remote="github" path="vendor/ejdb" />
 
 </manifest>
 
