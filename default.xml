@@ -10,11 +10,17 @@
   <project name="typegrind/typegrind.git" remote="github" path="." />
   <project name="typegrind/typegrind-core.git" remote="github" path="typegrind/core" />
 
-  <project name="llvm-mirror/llvm.git" remote="github" path="vendor/llvm/" revision="release_38" />
-  <project name="typegrind/clang.git" remote="github" path="vendor/llvm/tools/clang" revision="release_38" />
-  <project name="typegrind/clang-tools-extra.git" remote="github" path="vendor/llvm/tools/clang/tools/extra" revision="release_38" />
-  <project name="llvm-mirror/compiler-rt.git" remote="github" path="vendor/llvm/projects/compiler-rt" revision="release_38" />
-
+  <!-- mirroring every llvm repository to keep them in sync at a stable-ish state -->
+  <project name="typegrind/llvm.git" remote="github" path="vendor/llvm/" revision="master"/>
+  <project name="typegrind/clang.git" remote="github" path="vendor/llvm/tools/clang" revision="master">
+    <linkfile src="." dest="vendor/clang" />
+  </project>
+  <project name="typegrind/clang-tools-extra.git" remote="github" path="vendor/llvm/tools/clang/tools/extra" revision="master">
+    <linkfile src="." dest="vendor/clang-tools-extra" />
+  </project>
+  <project name="typegrind/compiler-rt.git" remote="github" path="vendor/llvm/projects/compiler-rt" revision="master">
+    <linkfile src="." dest="vendor/compiler-rt" />
+  </project>
 
   <project name="typegrind/clang-typegrind.git" remote="github" path="typegrind/clang-typegrind"> 
     <linkfile src="." dest="vendor/llvm/tools/clang/tools/extra/clang-typegrind" />
